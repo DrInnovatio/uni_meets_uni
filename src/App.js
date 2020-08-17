@@ -4,8 +4,8 @@ import LandingPage from '../src/Landing/Landing.jsx'
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage/>
+    <div>
+      <LandingPage />
     </div>
   );
 }
