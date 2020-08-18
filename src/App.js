@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import LandingPage from '../src/Landing/Landing.jsx'
+import LandingPage from '../src/Landing/Landing.jsx';
+
 
 function App() {
   return (
-    <div>
-      <LandingPage />
+
+    <div >
+      <LandingPage / >
     </div>
   );
 }
