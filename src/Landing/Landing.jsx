@@ -1,6 +1,6 @@
-import React from "react";
-import { makeStyles } from '@material-ui/core/styles';
-import backgroundPic from './images/youngPeople';
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import backgroundPic from './images/youngPeople'
 
 const useStyles = makeStyles({
   root: {
@@ -10,20 +10,14 @@ const useStyles = makeStyles({
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
     color: 'white',
     height: 48,
-    padding: '0 30px',
-  },
-});
+    padding: '0 30px'
+  }
+})
 
-function LandingPage() {
+function LandingPage () {
+  const pic = backgroundPic
 
-  const pic = backgroundPic;
-
-  return (
-    <div>
-      { this.pic }
-    </div>
-  )
+  return <div>{this.pic}</div>
 }
 
-
-export default LandingPage;
+export default LandingPage
