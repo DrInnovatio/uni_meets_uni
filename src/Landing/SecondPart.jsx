@@ -1,26 +1,34 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
 
-const useStyles = makeStyles({
-  root: {
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-    border: 0,
-    borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    color: 'white',
-    height: 200,
-    padding: '0 30px',
-    position: 'relative'
+const mainBox = {
+  width: '100%',
+  height: '700px',
+  background: 'green'
+};
+
+const bannerText = {
+  background: "pink",
+  boxShadow: "5px 10px #800020",
+  width: "50%",
+  height: "200px",
+  borderRadius: "10px",
+  opacity: "0.8",
+  margin: "27% 25%",
+  position: "fixed",
+  textAlign: "center",
+  paddingTop: ""
+};
+
+export default class whyUmU extends React.Component {
+  
+  render() {
+    return (
+      <div style={mainBox} >
+        <div style={bannerText}>
+              <h1>Uni Meets Uni</h1>  
+              <p>The New Way for Socializing</p> 
+        </div>
+      </div>
+    );
   }
-})
-
-function SecondPart() {
-  const classes = useStyles()
-  return (
-    <div>
-      <h1 className={ classes.root }>skabcsadbab</h1>
-    </div>
-  )
 }
-
-export default SecondPart;
