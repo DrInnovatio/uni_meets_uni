@@ -1,12 +1,6 @@
 import React from 'react';
 import ImgMediaCard from './card.jsx';
 
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import DeleteIcon from '@material-ui/icons/Delete';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-
 // got these icons from   https://react-icons.github.io/search
 import { FaApple } from 'react-icons/fa';
 import { FaGooglePlay } from 'react-icons/fa';
@@ -36,19 +30,21 @@ const bannerText = {
 };
 
 const cards = {
+  background: "#800020",
   display: "flex",
   justifyContent: 'space-around',
   paddingTop: "110vh",
   background: "green",
-  paddingBottom: "8%"
+  paddingBottom: "4%"
 }
 
 const third = {
-  width: "80%",
+  width: "70%",
   height: "100%",
   background: "#800020",
   fontSize: "1.5rem",
-  margin: "10% auto"
+  margin: "4% auto",
+  color: "#29c7ac"
 }
 
 const icons = {
@@ -56,7 +52,6 @@ const icons = {
   display: "flex",
   justifyContent: "center",
   margin: "4%"
-
 }
 
 export default class Landing extends React.Component {
@@ -78,15 +73,19 @@ export default class Landing extends React.Component {
         <ImgMediaCard/>   
       </div>
 
-        <div style={third}>
+      <div style={third}>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi optio debitis incidunt laboriosam. Unde dolorem odit quo molestiae dolores quas iusto, reiciendis, ab necessitatibus eum est deserunt veniam corrupti suscipit accusantium, sunt quasi? Nam quibusdam nobis quos consequatur molestias?</p>
         <br/>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nam culpa in. Veritatis rerum sed quia repudiandae minus? Quibusdam omnis at fugiat pariatur, nostrum maxime harum ea officia vitae minus, amet rerum, saepe labore error quod delectus esse impedit corrupti.</p>
-          <div style={ icons }>
+
+        <div style={ icons }>
           <FaApple />
           <FaGooglePlay style={{paddingLeft:"30px"}}/>
         </div>
-        </div>
+
+      </div>
+
     </div>
     );
   };
