@@ -1,6 +1,16 @@
 import React from 'react';
 import ImgMediaCard from './card.jsx';
-import download from'./download.jsx';
+
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import DeleteIcon from '@material-ui/icons/Delete';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+
+// got these icons from   https://react-icons.github.io/search
+import { FaApple } from 'react-icons/fa';
+import { FaGooglePlay } from 'react-icons/fa';
+
 
 const backgroundImage = require('../images/youngPeople.jpg');
 
@@ -22,14 +32,31 @@ const bannerText = {
   margin: "27% 25%",
   position: "relative",
   textAlign: "center",
-  paddingTop: ""
+  paddingTop: "3%"
 };
 
 const cards = {
   display: "flex",
   justifyContent: 'space-around',
   paddingTop: "110vh",
-  background: "green"
+  background: "green",
+  paddingBottom: "8%"
+}
+
+const third = {
+  width: "80%",
+  height: "100%",
+  background: "#800020",
+  fontSize: "1.5rem",
+  margin: "10% auto"
+}
+
+const icons = {
+  fontSize: "50px",
+  display: "flex",
+  justifyContent: "center",
+  margin: "4%"
+
 }
 
 export default class Landing extends React.Component {
@@ -40,16 +67,27 @@ export default class Landing extends React.Component {
       <div style={divStyle} >
         <div style={bannerText}>
             <h1>Uni Meets Uni</h1>  
-            <p>The New Way for Socializing</p> 
+            <p style={{paddingTop: "20px"}}>The New Way for socializing for uni students in Brisbane.</p> 
         </div>
       </div>
+
+      /* The Second Part */
       <div style={cards}>
         <ImgMediaCard/>
         <ImgMediaCard/>
-        <ImgMediaCard/>
-        <download/>
+        <ImgMediaCard/>   
       </div>
+
+        <div style={third}>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi optio debitis incidunt laboriosam. Unde dolorem odit quo molestiae dolores quas iusto, reiciendis, ab necessitatibus eum est deserunt veniam corrupti suscipit accusantium, sunt quasi? Nam quibusdam nobis quos consequatur molestias?</p>
+        <br/>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nam culpa in. Veritatis rerum sed quia repudiandae minus? Quibusdam omnis at fugiat pariatur, nostrum maxime harum ea officia vitae minus, amet rerum, saepe labore error quod delectus esse impedit corrupti.</p>
+          <div style={ icons }>
+          <FaApple />
+          <FaGooglePlay style={{paddingLeft:"30px"}}/>
+        </div>
+        </div>
     </div>
     );
-  }
-}
+  };
+};
