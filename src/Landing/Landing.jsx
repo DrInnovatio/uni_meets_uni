@@ -1,5 +1,6 @@
 import React from 'react';
 import ImgMediaCard from './card.jsx';
+import download from'./download.jsx';
 
 const backgroundImage = require('../images/youngPeople.jpg');
 
@@ -46,6 +47,7 @@ export default class Landing extends React.Component {
         <ImgMediaCard/>
         <ImgMediaCard/>
         <ImgMediaCard/>
+        <download/>
       </div>
     </div>
     );
