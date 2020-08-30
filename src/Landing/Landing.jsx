@@ -2,6 +2,7 @@ import React from 'react';
 import ImgMediaCard from './card.jsx';
 
 // got these icons from   https://react-icons.github.io/search
+
 import { FaApple } from 'react-icons/fa';
 import { FaGooglePlay } from 'react-icons/fa';
 
