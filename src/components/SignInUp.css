@@ -1,5 +1,5 @@
 .App {
-  height: 100vh;
+  height: 89.8vh;
   display: flex;
   color: white;
 }
@@ -49,9 +49,9 @@
   border-bottom-right-radius: 25px;
 }
 
-.FormCenter {
+/* .FormCenter {
   margin-bottom: 100px;
-}
+} */
 
 .FormTitle {
   color: #707C8B;
