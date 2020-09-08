@@ -10,6 +10,7 @@ export default function Products() {
 
       <i className="fa fa-instagram"></i>
       <i className="fa fa-google-play"></i>
+      <i className="fa fa-apple-alt"></i>
     </div>
   )
 
