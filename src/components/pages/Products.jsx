@@ -1,7 +1,5 @@
 import React from 'react'
-
 import '../../App.css'
-
 
 export default function Products() {
   return (
@@ -13,7 +11,5 @@ export default function Products() {
       <i className="fa fa-apple-alt"></i>
     </div>
   )
-
-
 }
 
