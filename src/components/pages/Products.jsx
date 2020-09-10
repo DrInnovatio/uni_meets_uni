@@ -11,10 +11,10 @@ export default function Products() {
         <h4>Sorry. This application is still beta version,</h4>
         <h5>and being tested with the students of</h5>
         <div style={ { fontSize: "25px", margin: "20px", color: "#2ec1ac" } }>
-          <p>Queensland University of Technology</p>
-          <p>University of Queensland</p>
-          <p>Griffith University</p>
-          <p>Central Queensland University</p>
+          <li>Queensland University of Technology</li>
+          <li>University of Queensland</li>
+          <li>Griffith University</li>
+          <li>Central Queensland University</li>
         </div>
       </div>
 
