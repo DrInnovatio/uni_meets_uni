@@ -15,7 +15,7 @@ function Footer() {
         </p>
         <div className="input-area">
           <form>
-            <input type="email" name="email" placeholder="Your Email" className="footer-input"/>
+            <input type="email" name="email" placeholder="Your Email" className="footer-input" />
             <Button buttonStyle="btn--outline">Subscribe</Button>
           </form>
         </div>
@@ -63,13 +63,13 @@ function Footer() {
               Uni Meets Uni <i className="fa fa-compass" style={ { paddingLeft: "15px" } }></i>
             </Link>
           </div>
-          {/*<small className="website-rights">UmU @ 2020</small>*/}
+          {/*<small className="website-rights">UmU @ 2020</small>*/ }
           <div className="social-icons">
             <Link className="social-icon-link facebook"
               to='/'
               target='_blank'
               aria-label="Facebook"
-              >
+            >
               <i className="fa fa-facebook-f"></i>
             </Link>
             <Link className="social-icon-link instagram"

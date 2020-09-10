@@ -8,7 +8,7 @@ export default function Products() {
     <div className="products">
       <h4 >You can download the apps right now</h4>
 
-      <div>
+      <div className="react-icons">
         <FaGooglePlay />
         <FaAppStore />
       </div>

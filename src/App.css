@@ -32,6 +32,18 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 2rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.react-icons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 10rem;
+  height: 3rem;
+  font-size: 70px;
+  margin-top: 2%;
 }
 
 .sign-up {
