@@ -1,51 +1,45 @@
-import React from 'react'
-import InputGroup from 'react-bootstrap/InputGroup'
-import { Button, FormControl } from 'react-bootstrap';
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+import SnackbarContent from '@material-ui/core/SnackbarContent';
+
 import '../../App.css'
 
-export default function Services() {
+const action = (
+  <Button color="secondary" size="small">
+    lorem ipsum dolorem
+  </Button>
+);
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    maxWidth: 600,
+    '& > * + *': {
+      marginTop: theme.spacing(2),
+    },
+  },
+}));
+
+export default function LongTextSnackbar() {
+  const classes = useStyles();
+
   return (
-    <div>
-
-      <div>
-        <InputGroup className="mb-3">
-          <InputGroup.Prepend>
-            <Button variant="outline-secondary">Button</Button>
-          </InputGroup.Prepend>
-          <FormControl aria-describedby="basic-addon1" />
-        </InputGroup>
-
-        <InputGroup className="mb-3">
-          <FormControl
-            placeholder="Recipient's username"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-          />
-          <InputGroup.Append>
-            <Button variant="outline-secondary">Button</Button>
-          </InputGroup.Append>
-        </InputGroup>
-
-        <InputGroup className="mb-3">
-          <InputGroup.Prepend>
-            <Button variant="outline-secondary">Button</Button>
-            <Button variant="outline-secondary">Button</Button>
-          </InputGroup.Prepend>
-          <FormControl aria-describedby="basic-addon1" />
-        </InputGroup>
-
-        <InputGroup>
-          <FormControl
-            placeholder="Recipient's username"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-          />
-          <InputGroup.Append>
-            <Button variant="outline-secondary">Button</Button>
-            <Button variant="outline-secondary">Button</Button>
-          </InputGroup.Append>
-        </InputGroup>
-      </div>
+    <div className={ classes.root }>
+      <SnackbarContent message="I love snacks." action={ action } />
+      <SnackbarContent
+        message={
+          'I love candy. I love cookies. I love cupcakes. \
+          I love cheesecake. I love chocolate.'
+        }
+      />
+      <SnackbarContent message="I love candy. I love cookies. I love cupcakes." action={ action } />
+      <SnackbarContent
+        message={
+          'I love candy. I love cookies. I love cupcakes. \
+          I love cheesecake. I love chocolate.'
+        }
+        action={ action }
+      />
     </div>
-  )
-} 
+  );
+}
